@@ -5,7 +5,8 @@ import CovidData from './components/CoronaData.js';
 import Character from './components/Character.js';
 import NYT_articles from './components/NYTapi.js';
 import TestForm from './components/MyForm.js';
-import FullForm from './components/MyForm2.js'
+import FullForm from './components/MyForm2.js';
+import TravelForm from './components/TravelForm.js';
 
 class App extends React.Component{
     constructor(){
@@ -34,6 +35,8 @@ class App extends React.Component{
                 <TestForm/>
                 <hr/>
                 <FullForm/>
+                <hr/>
+                <TravelForm/>
             </div>
         )
     }
