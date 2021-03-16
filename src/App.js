@@ -1,25 +1,36 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { Component, Container } from 'react-bootstrap';
+import Planets from './components/Planets.js';
+import CovidData from './components/CoronaData.js';
+import Character from './components/Character.js';
+import NYT_articles from './components/NYTapi.js';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends React.Component{
+    constructor(){
+        super()
+        this.state = {
+            value: []
+        }
+    }
+
+    render(){
+
+        const margin = {
+            margin: "0.5em"
+        }
+
+        return(
+            <div style={margin}>
+                <Character/>
+                <hr/>
+                <Planets/>
+                <hr/>
+                <CovidData/>
+                <hr/>
+                <NYT_articles/>
+            </div>
+        )
+    }
 }
 
 export default App;
