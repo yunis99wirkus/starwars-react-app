@@ -4,6 +4,8 @@ import Planets from './components/Planets.js';
 import CovidData from './components/CoronaData.js';
 import Character from './components/Character.js';
 import NYT_articles from './components/NYTapi.js';
+import TestForm from './components/MyForm.js';
+import FullForm from './components/MyForm2.js'
 
 class App extends React.Component{
     constructor(){
@@ -28,6 +30,10 @@ class App extends React.Component{
                 <CovidData/>
                 <hr/>
                 <NYT_articles/>
+                <hr/>
+                <TestForm/>
+                <hr/>
+                <FullForm/>
             </div>
         )
     }
